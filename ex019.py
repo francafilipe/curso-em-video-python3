@@ -10,3 +10,17 @@ for i in range(1, 5):  # Gera um loop com a variavel i percorrendo os valores de
 num = randint(1, 4)  # Gera um numero inteiro aleatório entre 1 e 4 (inclusive)
 print('O aluno sorteado foi {}.'.format(aluno[num])) \
     # Imprime na tela o nome do aluno sorteado, acessando-o pelo sua chave no dict
+
+"""
+Outra maneira de resolver esse exercicio é utilizando-se o metodo .choice
+
+from random import choice
+
+aluno = [] #  Cria-se uma lista de alunos (ao inves de um dict)
+for i in range(1, 5):
+    aluno[i] = input("Digite o nome do {}° aluno: ".format(i))
+
+escolhido = random.choice(aluno)  # Escolhe um dos elementos da lista aluno e atribiu esse valor a variavel escolhido
+print('O aluno escolhido foi {}.'.format(escolhido)
+
+"""
