@@ -6,6 +6,6 @@ larg = float(input('Digite a largura da parede: '))  # Recebe o valor da largura
 alt = float(input('Digite a altura da parede: '))  # Recebe o valor da altura da parede
 
 area = larg*alt  # Calcula a area da parede
-tinta = lit*area  # Calcula a quantidade de tinta gasta para a parede
+tinta = area/lit  # Calcula a quantidade de tinta gasta para a parede
 
 print('É necessário {} litros de tinta para a pintura desta parede.'.format(tinta))
