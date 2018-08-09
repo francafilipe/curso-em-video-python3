@@ -1,7 +1,11 @@
 # Curso em Vídeo Python 3 - Exercicio 41
 # Classificação de atletas em categorias referente a sua idade
 
-idade = int(input('Idade do atleta: '))
+from datetime import date
+
+nasc = int(input('Ano de nascimento do atleta: '))
+ano = date.today().year
+idade = ano - nasc
 
 if idade <= 9:
     print('MIRIM')
