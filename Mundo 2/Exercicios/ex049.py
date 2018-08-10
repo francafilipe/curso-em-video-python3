@@ -7,5 +7,5 @@ print('-='*8)
 print('TABUADA DO {}'.format(num))
 for i in range(0, 11):
     res = num*i
-    print('{} x {} = {}'.format(num, i, res))
+    print('{} x {:2} = {}'.format(num, i, res))
 print('-='*8)
