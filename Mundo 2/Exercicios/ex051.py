@@ -8,4 +8,3 @@ raz = int(input('Razão: '))
 for i in range(0, 10):
     termo = prim + i*raz
     print('{}° termo: {}'.format(i+1, termo))
-
