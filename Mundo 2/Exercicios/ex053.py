@@ -11,3 +11,14 @@ if frase == invertida:
 else:
     print('A frase não é um palíndromo.')
 
+"""
+SOLUÇÃO ALTERNATIVA
+
+frase = input('Insira a frase: ').lower().replace(' ', '')
+invertida = frase[::-1]
+
+if frase == invertida:
+    print('A frase é um palíndromo.')
+else:
+    print('A frase não é um palíndromo.')
+"""
