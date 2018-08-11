@@ -18,3 +18,21 @@ else:
             break
     else:
         print('É primo')
+
+"""
+Solução alternativa
+
+print('{}NUMEROS PRIMOS{}'.format('-='*3, '-='*3))
+num = abs(int(input('Insira o numero: ')))
+total = 0
+for i in range(1, num + 1):
+    if num % i == 0:
+        total += 1
+
+print('O numero {} foi divisivel {} vezes.'.format(num, total))
+if total == 2:
+    print('O numero É PRIMO')
+else: 
+    print('O numero NÃO É PRIMO')
+    
+"""
