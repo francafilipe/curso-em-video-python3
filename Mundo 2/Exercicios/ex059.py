@@ -1,6 +1,7 @@
 # Curso em Vídeo Python 3 - Exercicio 59
 # Calculadora básica
 
+from time import sleep
 print('{}CALCULADORA{}'.format('-'*6, '-'*6))
 num1 = float(input('Primeiro valor: '))
 num2 = float(input('Segundo valor: '))
@@ -33,6 +34,7 @@ while opc != 5:
         num2 = float(input('Segundo valor: '))
     elif opc == 5:
         print('Fechando programa...')
+        sleep(2)
     else:
         print('Opção inválida')
     print('-'*23)
