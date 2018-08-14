@@ -3,7 +3,7 @@
 
 soma = cont = maior = menor = 0
 resp = 'S'
-while resp != 'N':
+while resp == 'S':
     valor = int(input('Valor: '))
     if cont == 0:
         maior = valor
@@ -15,6 +15,9 @@ while resp != 'N':
     soma += valor
     cont += 1
     resp = str(input('Deseja continuar a inserir valores [S/N]: ')).strip().upper()
+    while resp != 'S' and resp != 'N':
+        resp = str(input('Opção inválida! Deseja continuar a inserir valores [S/N]: ')).strip().upper()
+
 
 media = soma / cont
 print('Foram digitados {} valores, sendo a media dos valores igual a {}.'.format(cont, media))
