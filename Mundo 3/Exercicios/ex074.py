@@ -5,6 +5,14 @@ from random import randint
 
 numeros = (randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10))
 
+print('Os valores sorteados foram: ')
+for i in numeros:
+    print(i, end=' ')
+
+print('\nO maior valor sorteado foi {}'.format(max(numeros)))
+print('O menor valor sorteado foi {}'.format(min(numeros)))
+
+"""
 for pos, num in enumerate(numeros):
     print(num, end=' ')
     if pos == 0:
@@ -18,3 +26,5 @@ for pos, num in enumerate(numeros):
 
 print('\nO maior valor sorteado foi {}'.format(maior))
 print('O menor valor sorteado foi {}'.format(menor))
+"""
+
