@@ -15,9 +15,12 @@ print('Rebaixados: {}'.format(times[-4:]))
 print(form)
 print('Listagem dos times em ordem alfabética: {}'.format(sorted(times)))
 print(form)
+print('A Chape esta na {}° posição.'.format(times.index('Chapecoense') + 1))
 
+"""
 for pos, time in enumerate(times):
     if time.upper() == 'CHAPECOENSE':
         posicao = pos + 1
         break
-print('A Chape estão na {}° posição.'.format(posicao))
+print('A Chape está na {}° posição.'.format(posicao))
+"""
