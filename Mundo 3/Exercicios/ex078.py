@@ -5,17 +5,14 @@ valores = []
 
 for i in range(0, 5):
     valores.append(int(input(f'Insira o {i+1}° valor: ')))
-
-for c, v in enumerate(valores):
-    if c == 0:
-        maior = v
-        menor = v
-        posM = posm = c
+    if i == 0:
+        maior = valores[i]
+        menor = valores[i]
     else:
-        if v > maior:
-            maior = v
-        elif v < menor:
-            menor = v
+        if valores[i] > maior:
+            maior = valores[i]
+        elif valores[i] < menor:
+            menor = valores[i]
 
 posM = [c for c, v in enumerate(valores) if v == maior]
 posm = [c for c, v in enumerate(valores) if v == menor]
