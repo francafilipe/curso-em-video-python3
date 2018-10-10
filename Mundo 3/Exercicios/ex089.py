@@ -6,7 +6,7 @@ alunos = []
 while True:
     des = ' '
     notas = []
-    aluno =[]
+    aluno = []
 
     nome = str(input('Nome: '))
     nota1 = float(input('Nota 1: '))
@@ -15,26 +15,26 @@ while True:
 
     notas.append(nota1)
     notas.append(nota2)
+    alunos.append([nome, notas[:], media])
 
-    aluno.append(nome)
-    aluno.append(notas[:])
-    aluno.append(media)
     notas.clear()
-    alunos.append(aluno[:])
-    aluno.clear()
 
     while des not in 'SN':
         des = str(input('Deseja continuar [S/N]? ')).upper()
     if des == 'N':
         break
 
+print('-='*20)
+print('{:<3} {:<10} {:>10}'.format('N°', 'Nome', 'Média'))
+print('-'*25)
 for i, aluno in enumerate(alunos):
-    print('{:} {:<3} {}'.format(i, aluno[0], aluno[2]))
+    print('{:<3} {:<10} {:>9}'.format(i, aluno[0], aluno[2]))
 
 while True:
+    print('-' * 25)
     most = int(input('Mostrar nota de qual aluno? (999 interrompe) '))
     if most == 999:
         break
     else:
         print('Notas de {} são {}'.format(alunos[most][0], alunos[most][1]))
-print(alunos)
+print('{:<14}FINALIZADO{:>14}'.format('-='*7, '-='*7))
