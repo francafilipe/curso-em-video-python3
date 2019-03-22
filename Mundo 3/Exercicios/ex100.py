@@ -2,11 +2,12 @@
 # Funções para sortear e somar
 
 from random import randint
-
+from time import sleep
 
 def sortear(n):
     numeros = list()
     print('Sorteando valores...')
+    sleep(1.5)
     for i in range(0, n):
         num = randint(0, 10)
         numeros.append(num)

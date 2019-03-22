@@ -3,12 +3,11 @@
 
 
 def voto(nasc):
-
     from datetime import date
     now = date.today()
 
     idade = now.year - nasc
-    if 0 < idade < 16:
+    if 0 <= idade < 16:
         return 'Idade de {} anos. NÃO VOTA.'.format(idade)
     elif 16 <= idade < 18 or idade >=60:
         return 'Idade de {} anos. VOTO OPCIONAL.'.format(idade)
